@@ -1,22 +1,22 @@
 package exercise2;
 
 class Person {
-	private static int populationSize = 0;
-	private static long totalAge = 0;
+	private static int PopulationSize = 0;
+	private static long TotalAge = 0;
 	private int age;
 	public Person(int age){
 		this.age = age;
-		populationSize++;
-		totalAge += age;
+		PopulationSize++;
+		TotalAge += age;
 	}
-	public static int getPopulationSize(){
-		return populationSize;
+	public static int computePopulationSize(){
+		return PopulationSize;
 	}
 	public static float computePopulationAverage(){
-		return ((float)totalAge/populationSize);
+		return (float)TotalAge/PopulationSize;
 	}
 	public static void resetPopulation(){
-		populationSize = 0;
-		totalAge=0;
+		PopulationSize = 0;
+		TotalAge=0;
 	}
 }

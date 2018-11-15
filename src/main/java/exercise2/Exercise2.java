@@ -7,23 +7,26 @@ public class Exercise2 {
 	// Créez-y une méthode statique "computeAveragePopulationAge" pour calculer l'âge moyen de la population.
 	// Implémentez-y une méthode statique "resetPopulation" pour remettre les compteurs à zéro.
 
-	static void createPerson(int age) {
+	static Person createPerson(int age) {
+		Person newPerson = new Person(age);
+		return newPerson;
 	}
 
 	static int computePopulationSize() {
 		// TODO remove comment when implemented
-		// return Person.computePopulationSize();
-		return 0;
+		return Person.computePopulationSize();
+		//return 0;
 	}
 
 	static float computeAveragePopulationAge() {
 		// TODO remove comment when implemented
-		// return Person.computeAveragePopulationAge();
-		return 0.0F;
+		return Person.computePopulationAverage();
+		//return 0.0F;
 	}
 
 	static void resetPopulation() {
 		// TODO remove comment when implemented
-		// Person.resetPopulation();
+		Person.resetPopulation();
 	}
 }
+
